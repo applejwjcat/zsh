@@ -15,7 +15,6 @@ typeset -A ZINIT=(
 source $ZDOTDIR/zinit/bin/zinit.zsh
 source $ZDOTDIR/.alias.zsh
 
-[ -f ~/.config/.fzf.zsh ] && source ~/.config/.fzf.zsh
 
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
@@ -43,6 +42,48 @@ zinit snippet OMZ::lib/theme-and-appearance.zsh
 
 zinit ice wait lucid atload"unalias grv"
 zinit snippet OMZ::plugins/git/git.plugin.zsh
+
+zinit ice wait lucid
+zinit snippet OMZ::lib/git.zsh
+
+zinit ice wait lucid
+zinit snippet OMZ::lib/correction.zsh
+
+zinit ice wait lucid
+zinit snippet OMZ::lib/diagnostics.zsh
+
+zinit ice wait lucid
+zinit snippet OMZ::lib/directories.zsh
+
+zinit ice wait lucid
+zinit snippet OMZ::lib/functions.zsh
+
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/bzr.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/cli.zsh
+#
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/clipboard.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/spectrum.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/nvm.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/prompt_info_functions.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/misc.zsh
+# 
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/compfix.zsh
+#
+# zinit ice wait lucid
+# zinit snippet OMZ::lib/termsupport.zsh
 
 zinit ice wait lucid
 zinit snippet OMZ::plugins/colorize/colorize.plugin.zsh
